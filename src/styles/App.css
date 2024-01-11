@@ -26,6 +26,7 @@ body {
   line-height: 1.5;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  overflow-x: hidden;
 }
 .font-sans {
   font-family: Proxima Nova,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -180,7 +181,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 20rem;
+  width: 25rem;
   z-index: 50;
 }
 
@@ -188,4 +189,92 @@ body {
   --tw-text-opacity: 1;
   color: #051e33;
   color: rgb(5 30 51/var(--tw-text-opacity));
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.min-h-screen-excluding-header {
+  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - var(--header-height));
+}
+
+@media (min-width: 1366px) {
+  .container {
+      max-width: 1366px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+      max-width: 1280px;
+  }
+}
+
+
+.sample-slider .swiper-pagination-bullet{
+  background-color: gray;
+}
+.sample-slider .pagi-position {
+  position: relative;
+}
+
+.sample-slider .swiper-button-next,
+.sample-slider .swiper-button-prev {
+  background-color: white;
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid black;
+  color: red;
+}
+
+.sample-slider .prev-position{
+  top: 20px;
+  float: right;
+  left: 91%;
+}
+
+.sample-slider .next-position{
+  top: 20px;
+  float: right;
+}
+
+.sample-slider .swiper-button-next{
+ background-image: url("../../public/img/right-arrow-svgrepo-com.svg");
+}
+
+.sample-slider .swiper-button-prev{
+  background-image: url("../../public/img/left-arrow-svgrepo-com.svg");
+ }
+
+ .bg-gray-1000 {
+  --tw-bg-opacity: 1;
+  background-color: #0c0d13;
+  background-color: rgb(12 13 19/var(--tw-bg-opacity));
+}
+
+.setting {
+  border-radius: 6px;
+  box-shadow: 0 6px 30px #0000001a;
+  color: #000;
+  max-width: 400px;
+  width: calc(100% - 28px);
+}
+
+.setting-position {
+  margin-left: -350px;
+  margin-top: 10px;
 }
