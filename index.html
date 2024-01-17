@@ -2,119 +2,255 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Helix | The Premier Decentralized Spot and Derivatives Exchange</title>
-    <meta property="og:url" content="https://helixapp.com">
-    <meta name="keywords"
-      content="injective protocol, dapp, decentralized app, cryptocurrency, cryptocurrency exchange, exchange, ethereum, erc20, futures, perpetuals, futures protocol, cosmos, spot trading, derivatives, injective, ibc, cross-chain">
-    <meta name="description"
-      content="Trade on Helix - the premier decentralized spot and derivatives exchange with low fees and gas free execution">
-    <meta name="author" content="InjectiveLabs">
-    <meta property="og:type" content="exchange">
-    <meta property="og:image" content="https://helixapp.com/images/og-helix.jpeg">
-    <meta property="og:description"
-      content="Trade on Helix - the premier decentralized spot and derivatives exchange with low fees and gas free execution">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:site" content="@InjectiveLabs">
-    <meta name="twitter:image" content="https://helixapp.com/images/og-helix.jpeg">
-    <meta property="twitter:creator" content="@InjectiveLabs">
-    <meta property="twitter:description"
-      content="Trade on Helix - the premier decentralized spot and derivatives exchange with low fees and gas free execution">
-    <meta property="twitter:title" content="Helix | The Premier Decentralized Spot and Derivatives Exchange">
-    <meta property="og:title" content="Helix | The Premier Decentralized Spot and Derivatives Exchange">
-    <meta property="og:site_name" content="Helix | The Premier Decentralized Spot and Derivatives Exchange">
-    <meta property="title" content="Helix | The Premier Decentralized Spot and Derivatives Exchange">
-    <link rel="icon" type="image/png" href="https://helixapp.com/favicon.png">
-    <link rel="shortcut icon" type="image/png" href="https://helixapp.com/favicon.png">
-    <link rel="apple-touch-icon" type="image/png" href="https://helixapp.com/favicon.png">
-    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    
-    <style id="mttstyle">
-      .tippy-box[data-theme~="custom"] {
-        font-size: 14px !important;
-        max-width: 200px !important;
-        text-align: center !important;
-        backdrop-filter: blur(4px) !important;
-        background-color: #000000b8 !important;
-        color: #ffffffff !important;
-        overflow-wrap: break-word !important;
-        font-family: Arial !important;
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <meta name="next-head-count" content="4">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="true">
+    <link rel="shortcut icon" href="https://alfred.capital/favicon/android-chrome-192x192.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <style
+      data-href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&amp;display=swap">
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSdSn3-J.woff) format('woff')
       }
   
-      [data-tippy-root] {
-        display: inline-block !important;
-        visibility: visible !important;
-        position: absolute !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSfSnn-J.woff) format('woff')
       }
   
-      .tippy-box[data-theme~='custom'][data-placement^='top']>.tippy-arrow::before {
-        border-top-color: #000000b8 !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmScMnn-J.woff) format('woff')
       }
   
-      .tippy-box[data-theme~='custom'][data-placement^='bottom']>.tippy-arrow::before {
-        border-bottom-color: #000000b8 !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSdSnn-J.woff) format('woff')
       }
   
-      .tippy-box[data-theme~='custom'][data-placement^='left']>.tippy-arrow::before {
-        border-left-color: #000000b8 !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSdgnn-J.woff) format('woff')
       }
   
-      .tippy-box[data-theme~='custom'][data-placement^='right']>.tippy-arrow::before {
-        border-right-color: #000000b8 !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSeMmX-J.woff) format('woff')
       }
   
-      .mtt-highlight {
-        background-color: #21dc6d40 !important;
-        position: absolute !important;
-        z-index: 100000100 !important;
-        pointer-events: none !important;
-        display: inline !important;
-        border-radius: 3px !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSe1mX-J.woff) format('woff')
       }
   
-      .ocr_text_div {
-        position: absolute;
-        opacity: 0.7;
-        color: transparent !important;
-        border: 2px solid CornflowerBlue;
-        background: none !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSfSmX-J.woff) format('woff')
       }
   
-      #ytp-caption-window-container .ytp-caption-segment {
-        cursor: text !important;
-        user-select: text !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQspDqW1KX7wmA.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
       }
   
-      .caption-visual-line {
-        display: flex !important;
-        align-items: stretch !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQUpDqW1KX4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
       }
   
-      .captions-text .caption-visual-line:first-of-type:after {
-        content: '⣿⣿';
-        background-color: #000000b8;
-        display: inline-block;
-        vertical-align: top;
-        opacity: 0;
-        transition: opacity 0.7s ease-in-out;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQspDqW1KX7wmA.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
       }
   
-      .captions-text:hover .caption-visual-line:first-of-type:after {
-        opacity: 1;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQUpDqW1KX4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
       }
   
-      .ytp-pause-overlay {
-        display: none !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQspDqW1KX7wmA.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
       }
   
-      .ytp-expand-pause-overlay .caption-window {
-        display: block !important;
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQUpDqW1KX4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQspDqW1KX7wmA.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQUpDqW1KX4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQspDqW1KX7wmA.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQUpDqW1KX4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQspDqW1KX7wmA.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQUpDqW1KX4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQspDqW1KX7wmA.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQUpDqW1KX4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQspDqW1KX7wmA.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQbuFFYT72XzQUpDqW1KX4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
       }
     </style>
+    <style data-href="https://fonts.googleapis.com/css2?family=Sora&amp;display=swap">
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSdSnn-J.woff) format('woff')
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSdSnk-DKQRDA8i1P4xdNw.woff) format('woff');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+      }
+  
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sora/v12/xMQOuFFYT72X5wkB_18qmnndmSdSnk-NKQRDA8i1P4w.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+      }
+    </style>
+    <title>Home | Alfred</title>
     
   </head>
-  <body class="font-sans">
+  <body style="margin: 0px; height: 100%; min-height: 100%">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

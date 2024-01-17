@@ -6,5 +6,9 @@ export default defineConfig({
   server: {
     host: '127.0.0.1', // Change the IP address here
   },
-  plugins: [react()]
+  plugins: [react()],
+  mode: 'development',
+  build: {
+    minify: false
+  }
 })
