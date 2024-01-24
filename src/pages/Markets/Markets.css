@@ -1,0 +1,35 @@
+.main-style{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 65.6px 0px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+@media (min-width: 0px) {
+    .recently-font{
+        font-size: 16px;
+    }
+}
+@media (min-width: 600px) {
+    .recently-font{
+        font-size: 20px;
+    }
+}
+
+.MuiSelect-icon{
+    color: rgb(255, 255, 255);
+}
+.main-svg {
+    height: 36px;
+    width: 36px;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    background: rgb(24, 187, 242);
+}

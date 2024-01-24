@@ -88,7 +88,7 @@ export default function Footer(props: any) {
                       </Typography>
                       <FormControl style={{width: '90%', minWidth:'295px', }}>
                         <Input style={{fontSize:'13px', color: 'rgb(0,0,0)', backgroundColor:'rgb(255,255,255)', padding: '0px 10px', height: '50px', borderRadius:'25px'}} placeholder='Enter your email address'></Input>
-                        <Button style={{width: '40%',borderRadius:'20px', height:'40px', backgroundColor:'rgb(37,37,235)', color: 'white', fontWeight:'700', padding:'8px 10px', position:'absolute', fontSize:'12px', textTransform:'capitalize', minWidth:'64px',top:'4px', right:'10px'}}>Subscribe Now</Button>
+                        <Button style={{width: '40%',borderRadius:'20px', height:'40px', backgroundColor:'rgb(37,37,235)', color: 'white', fontWeight:'700', padding:'8px 10px', position:'absolute', fontSize:'12px', textTransform:'capitalize', minWidth:'64px',top:'5px', right:'5px'}}>Subscribe Now</Button>
                       </FormControl>
                     </div>
                   </div>

@@ -83,7 +83,7 @@ export default function Header(props: any){
           </div>: ""}
           {!isMobile ? <div className="absolute right-[40px]">
             <Button className="h-[40px] w-[150px]" style={{backgroundColor: 'rgb(37, 37, 235)'}}>
-              <Link href="#" target="_blank" style={{ textDecoration: 'none'}}>
+              <Link href="/market" target="_blank" style={{ textDecoration: 'none'}}>
                 <Typography variant="h5" style={{ fontSize: '0.8rem', fontFamily: 'Sora, sans-serif', fontWeight: '700', color: 'white', textTransform: 'capitalize'}} >Launch App</Typography>
               </Link>
             </Button>
@@ -167,7 +167,7 @@ export default function Header(props: any){
           >
             <MenuItem onClick={handleClose}>
               <Button className="h-[40px] w-[120px]" style={{backgroundColor: 'rgb(37, 37, 235)', marginLeft: '20px', marginRight: '20px'}}>
-                <Link href="#" target="_blank" style={{ textDecoration: 'none'}}>
+                <Link href="/market" target="_blank" style={{ textDecoration: 'none'}}>
                   <Typography variant="h5" style={{ fontSize: '0.8rem', fontFamily: 'Sora, sans-serif', fontWeight: '700', color: 'white', textTransform: 'capitalize'}} >Launch App</Typography>
                 </Link>
               </Button>
